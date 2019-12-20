@@ -50,7 +50,7 @@ class BinarySearchTree:
                 return self.right.contains(target)
 
 
-duplicates = []
+duplicates = [] # 0(n log n) no nested loops using bts 
 bst = BinarySearchTree(names_1[0]) # 0.11733508110046387 seconds
 for name in names_1:
     bst.insert(name)
@@ -59,7 +59,7 @@ for name in names_2:
         duplicates.append(name)
 
 
-# duplicates = [] # 0(n^2)  7.707077264785767 seconds
+# duplicates = [] # 0(n^2) nested loops  7.707077264785767 seconds
 # for name_1 in names_1:
 #     for name_2 in names_2:
 #         if name_1 == name_2:
